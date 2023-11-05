@@ -1,0 +1,14 @@
+.card-container{
+    max-width: 210px;
+    max-height: 350px;
+    margin: 1.5rem;
+    transition: transform 0.5s;
+}
+.card-container:hover{
+    transform: scale(1.2);
+}
+
+.cardDetails {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,214 @@
+.loginContainer, .loginLeft {
+    display: flex;
+    position: relative;
+}
+
+.loginLeft {
+    background-image: url("/public/images/loginBG.jpg");
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 500px;
+    min-width: 500px;
+    height: 100vh;
+    background-position: 50%;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.loginLeft:after {
+    opacity: .9;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #4c1864;
+    background: linear-gradient(45deg,#4c1864,#3f189a);
+    box-sizing: border-box;
+}
+
+.loginLogo {
+    border-style: none;
+    height: auto;
+    max-width: 50%;
+    vertical-align: middle;
+}
+
+.loginForm {
+    width: 100%;
+    align-self: center;
+}
+
+.accountContainer {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px 0;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingBox {
+    margin-bottom: 50px;
+}
+
+.loginTitle {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding-left: 15px;
+    display: inline-block;
+    border-left: 5px solid rgb(247, 178, 5);
+}
+
+.loginTitle > span {
+    font-weight: 400;
+}
+
+.headingBox p {
+    max-width: 500px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.formBx{
+    display: block;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.form-control {
+    border-width: 0px 0px 2px;
+    background-color: transparent;
+    padding: 10px 0px;
+}
+
+.form-forget {
+    display: flex;
+}
+
+.custom-control-input {
+    position: relative;
+    left: 0;
+    width: 1rem;
+    height: 1.25rem;
+}
+
+.custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.m-b30 {
+    margin-bottom: 30px;
+}
+
+.btn.button-md {
+    margin-top: 10px;
+    padding: 12px 40px;
+    background-color: #f7b205;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.txt{        
+    width: fit-content;
+    margin: 0px 8px;
+}
+
+@media (min-width: 992px){
+    .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .loginContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .loginLeft {
+        width: 100%;
+        min-width: 100%;
+        height: 200px;
+    }
+    .headingBox {
+        margin-bottom: 40px;
+    }
+    .headingBx p {
+        font-size: 16px;
+    }
+    .loginTitle{
+        font-size: 28px;
+    }
+    .accountContainer {
+        padding: 50px 20px;
+    }
+    .formContainer{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+}
+
+.formBx .formContainer > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBx .formContainer .google-btn{
+    margin: 1rem 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgba(117, 117, 117,1);
+    box-shadow: 0px 4px 11px -1px rgba(155,155,155,1);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.formBx .formContainer .google-btn img{
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+.formBx .formContainer .google-btn:hover{
+    background-color: rgba(128, 128, 128, 0.08);
+    color: rgb(70, 70, 70);
+}

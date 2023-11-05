@@ -1,0 +1,20 @@
+#outlined-basic{
+    height: 200px;
+    vertical-align: text-top;
+    }
+    
+    .widget{
+        
+    
+    
+    position:sticky;    
+        left: 90%;
+        cursor: pointer;
+        /* background-color: purple; */
+        color: rgb(10, 123, 189);
+        filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+        font-size: 3rem;
+        top: 90%;
+    z-index: 2;
+    width: min-content;
+    }

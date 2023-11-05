@@ -1,0 +1,77 @@
+.difficulty {
+    padding: 20px;
+}
+
+.diff-heading{
+    display: flex;
+    align-items: center;
+}
+
+.two-side{
+    width: 50%;
+}
+
+.diff-title{
+    margin-top: 200px;
+    font-size: 60px;
+    font-weight: 800;
+    color: #221638;
+}
+
+.dev {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    left: 12%;
+    bottom: -1;
+    z-index: -1;
+    position: absolute;
+}
+
+.course-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .diff-heading{
+        flex-direction: column;
+    }
+    .two-side{
+        width: 100%;
+    }
+    .diff-title{
+        margin-top: 370px;
+        margin-left: 180px;
+        font-size: 45px; 
+        font-weight: 700;
+    }
+    .learn-bg img{
+        max-width: 100%;
+    }
+    .dev{
+        align-items: center;
+    }
+    .dev-img{
+        z-index: -1;
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+    }
+}
+.nav-item.my-0.mx-4{
+    font-size: 15px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(19, 212, 170, 0.379);
+    width: 250px;
+    height: 30px;
+    border-radius: 7px;
+    color: rgb(64, 73, 81);
+    text-align: center;
+   
+    
+    
+    
+    
+}
